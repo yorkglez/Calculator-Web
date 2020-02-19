@@ -1,0 +1,87 @@
+
+.calculator-content
+{
+    position: relative;
+}
+/*=============================================
+=            Input            =
+=============================================*/
+.input
+{
+    background-color: #0cac5c;
+    border: none;
+    color: white
+}
+/*=====  End of Input  ======*/
+
+
+/*=============================================
+=            Buttons            =
+=============================================*/
+.btn
+{
+    background-color: #0cac5c;
+    border: none;
+    height: 50px;
+    width: 50px;
+    margin-top: 5px;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+
+#btn-zero
+{
+    width: 104px;
+}
+
+#btn-equals
+{
+    position: absolute;
+    bottom: 0;
+    height: 104px;
+    margin-left: 5px;
+}
+
+
+/*=====  End of Buttons  ======*/
+
+
+
+
+@media screen and (max-width: 600px)
+{
+    .input
+    {
+        width: 100%;
+        height: 80px;
+        font-size: 3rem;
+    }
+
+    .btn
+    {
+        width: 83px;
+        height: 83px;
+        font-size: 3rem;
+    }
+
+    .btn:hover
+    {
+        background: #0a8d4b;
+    }
+    #btn-zero
+    {
+        width: 170px;
+    }
+
+    #btn-equals
+    {
+        position: absolute;
+        bottom: 0;
+        height: 170px;
+        margin-left: 5px;
+    }
+
+}
