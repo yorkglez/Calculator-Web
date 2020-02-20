@@ -68,10 +68,20 @@
     border: 1px solid #dd4454;
 }
 
+.btn-red:hover
+{
+    background-color: #ba3743;
+}
+
 .btn-black
 {
     background-color: #2d2d2d;
     border: 1px solid #383838;
+}
+
+.btn-black:hover
+{
+    background-color: #282828;
 }
 
 .btn-orange
@@ -80,6 +90,10 @@
     border: 1px solid #f18d40d7;
 }
 
+.btn-orange:hover
+{
+    background-color:#f08836;
+}
 
 
 #btn-zero
