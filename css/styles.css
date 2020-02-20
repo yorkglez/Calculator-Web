@@ -1,16 +1,42 @@
+*
+{
+    padding: 1px;
+    margin: 0;
+}
+.container
+{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 90vh;
+}
 
 .calculator-content
 {
     position: relative;
+    left: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.row
+{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    right: 0;
 }
 /*=============================================
 =            Input            =
 =============================================*/
 .input
 {
-    background-color: #0cac5c;
-    border: none;
-    color: white
+    background-color: #fff;
+    border: 1px solid gray;
+    color: black;
+    padding-left: 10px;
 }
 /*=====  End of Input  ======*/
 
@@ -20,14 +46,38 @@
 =============================================*/
 .btn
 {
-    background-color: #0cac5c;
-    border: none;
+    background-color: none;
     height: 50px;
     width: 50px;
-    margin-top: 5px;
+    margin: 0;
+    padding: 0;
     color: white;
     font-size: 2rem;
     cursor: pointer;
+    /* position: relative; */
+}
+
+.row .btn:not(:first-child)
+{
+    margin-left: -4px;
+}
+
+.btn-red 
+{
+    background-color: #c23946;
+    border: 1px solid #dd4454;
+}
+
+.btn-black
+{
+    background-color: #2d2d2d;
+    border: 1px solid #383838;
+}
+
+.btn-orange
+{
+    background-color: #f18e40;
+    border: 1px solid #f18d40d7;
 }
 
 
@@ -41,19 +91,24 @@
 {
     position: absolute;
     bottom: 0;
-    height: 104px;
-    margin-left: 5px;
+    height: 100px;
+    /* margin-left: 5px; */
 }
-
 
 /*=====  End of Buttons  ======*/
 
 
 @media screen and (max-width: 600px)
 {
+    .container
+    {
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+    }
     .input
     {
-        width: 100%;
+        width: 90%;
         height: 80px;
         font-size: 3rem;
     }
@@ -71,15 +126,15 @@
     }
     #btn-zero
     {
-        width: 170px;
+        width: 166px;
     }
 
     #btn-equals
     {
         position: absolute;
         bottom: 0;
-        height: 170px;
-        margin-left: 5px;
+        height: 166px;
+        margin-left: 0px;
     }
 
 }
